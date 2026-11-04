@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var container = document.getElementById('netftube-player');
     if (container) {
         var iframe = document.createElement('iframe');
-        // 👇 PEGA TU ENLACE ACTUAL DE STREAMING DENTRO DE LAS COMILLAS 👇
-        iframe.src = "https://streamxhd.sbs/live1.php?stream=winsports&t=1793772225251";
-        
+        iframe.src = "https://streamxhd.sbs/live1.php?stream=winsports&t=" + Date.now();
         iframe.setAttribute("allowfullscreen", "true");
         iframe.setAttribute("webkitallowfullscreen", "true");
         iframe.setAttribute("mozallowfullscreen", "true");
